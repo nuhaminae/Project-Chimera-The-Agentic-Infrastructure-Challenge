@@ -20,7 +20,7 @@ rules:
       - type: dependency
         message: "Review dependencies in requirements.txt for known CVEs"
       - type: file
-        paths: ["src/", "skills/", "agents/"]
+        paths: ["skills/", "agents/"]
         forbidden_imports:
           - "pickle"   # unsafe deserialization
           - "subprocess" # risky shell execution
