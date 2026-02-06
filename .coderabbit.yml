@@ -1,0 +1,26 @@
+# Project Chimera AI Review Policy
+version: 1
+
+rules:
+  - id: spec-alignment
+    description: "Ensure code aligns with Project Chimera SRS specifications"
+    checks:
+      - type: file
+        paths: ["skills/", "agents/"]
+        required_comment: "Ref: specs"
+      - type: comment
+        message: "Verify this implementation matches the contracts in Project Chimera SRS"
+
+  - id: security-vulnerabilities
+    description: "Check for common security issues"
+    checks:
+      - type: pattern
+        regex: "(eval\\(|exec\\()"
+        message: "Avoid use of eval/exec for security reasons"
+      - type: dependency
+        message: "Review dependencies in requirements.txt for known CVEs"
+      - type: file
+        paths: ["src/", "skills/", "agents/"]
+        forbidden_imports:
+          - "pickle"   # unsafe deserialization
+          - "subprocess" # risky shell execution
