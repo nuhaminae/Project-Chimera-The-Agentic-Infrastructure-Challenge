@@ -1,0 +1,9 @@
+2026-02-06 03:28:51.322 [info] Starting server tenxfeedbackanalytics
+2026-02-06 03:28:51.322 [info] Connection state: Starting
+2026-02-06 03:28:51.323 [info] Starting server from LocalProcess extension host
+2026-02-06 03:28:51.323 [info] Connection state: Running
+2026-02-06 03:28:52.087 [warning] Error fetching resource metadata: Error: Failed to fetch resource metadata from https://mcppulse.10academy.org/.well-known/oauth-protected-resource: 404 Not Found
+2026-02-06 03:28:52.087 [info] Discovered resource metadata at https://mcppulse.10academy.org/.well-known/oauth-protected-resource/proxy
+2026-02-06 03:28:52.090 [info] Using auth server metadata url: https://mcppulse.10academy.org/
+2026-02-06 03:28:52.196 [info] Discovered authorization server metadata at https://mcppulse.10academy.org/.well-known/oauth-authorization-server
+2026-02-06 03:28:53.772 [info] Discovered 3 tools
