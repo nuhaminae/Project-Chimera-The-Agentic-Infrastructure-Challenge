@@ -217,6 +217,8 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 Do not modify SpecKit native files (`agents/`, `prompts/`).  
 Focus contributions on `skills/`, `specs/`, `tests/`, and governance configs.  
 
+![Video_Walkthrough](mproject_walkthrough.mp4)
+
 ---
 
 ## Project Status
