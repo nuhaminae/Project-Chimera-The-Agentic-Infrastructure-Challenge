@@ -26,3 +26,5 @@ jobs:
     # Run tests inside Docker
     - name: Run tests
       run: docker run --rm -v ${{ github.workspace }}:/app chimera-agent pytest tests/
+
+      
